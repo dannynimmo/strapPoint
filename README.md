@@ -2,7 +2,9 @@
 
 strapPoint is a small jQuery utility plugin to make working with Bootstrap breakpoints easier.
 
+Mess with the [demo here](https://dannynimmo.github.io/strapPoint).
 
+Download the latest release from the [GitHub releases](https://github.com/dannynimmo/strapPoint/releases) page.
 
 ## Getting started
 
