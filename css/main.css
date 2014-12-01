@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    -webkit-transition: background-color .4s linear;
+       -moz-transition: background-color .4s linear;
+        -ms-transition: background-color .4s linear;
+         -o-transition: background-color .4s linear;
+            transition: background-color .4s linear;
+}
+h1 {
+    font: 300 32px/1 Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+h1 a {
+    text-decoration: none;
+    color: #333;
+}
+h1 a:hover,
+h1 a:focus {
+    text-decoration: underline;
+}
+h2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: -12px 0 0;
+    font: 300 24px/1 Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+h2 span {
+    padding: 15px;
+    border: solid 1px #333;
+}
+h2 span:empty {
+    display: none;
+}
