@@ -34,12 +34,6 @@ Initial release.
 
 
 
-## Todo
-
-* Allow multiple (comma-separated) breakpoints to be listened for.
-
-
-
 ## Methods
 
 
