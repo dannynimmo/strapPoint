@@ -99,8 +99,8 @@ $.strapPoint.lg(function (direction) {
 A shorthand method for calling `.on('all')`.
 
 ```javascript
-$.strapPoint.lg(function (direction) {
-    console.log('We are now large.');
+$.strapPoint.change(function (direction) {
+    console.log('Something changed…');
 });
 ```
 
