@@ -67,7 +67,7 @@ $.strapPoint.on('sm', function (direction) {
 The same as `.on`, only the callback is only run once.
 
 ```javascript
-$.strapPoint.on('md', function (direction) {
+$.strapPoint.one('md', function (direction) {
     if (direction === 'down') {
         console.log('We shrank once to medium.');
     } else {
