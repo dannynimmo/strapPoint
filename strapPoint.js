@@ -1,7 +1,7 @@
 /*
- * strapPoint v0.1.0
+ * strapPoint v0.2.0
  * https://github.com/dannynimmo/strapPoint
- * Copyright 2014 Danny Nimmo
+ * Copyright 2015 Danny Nimmo
  */
 
 ;(function (window, document, $, undefined) {
@@ -68,7 +68,7 @@
 
     var R = {
 
-        version: '0.1.0',
+        version: '0.2.0',
 
 
         xs: function (callback) {

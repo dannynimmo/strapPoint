@@ -28,6 +28,12 @@ $.strapPoint.on('lg', function () {
 ## Changelog
 
 
+### 0.2.0
+
+- Allows multiple breakpoints to be specified in a space-separated list
+- Fix bug where events would not fire due to DOM not being ready yet
+
+
 ### 0.1.0
 
 Initial release.
