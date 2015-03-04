@@ -1,0 +1,29 @@
+{
+    "name": "strappoint",
+    "version": "0.2.0",
+    "description": "A small jQuery utility plugin to make working with Bootstrap breakpoints easier",
+    "homepage": "https://github.com/dannynimmo/strapPoint",
+    "main": "strapPoint.js",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": ">=1.7"
+    },
+    "keywords": [
+        "javascript",
+        "js",
+        "jquery",
+        "bootstrap",
+        "responsive"
+    ],
+    "author": {
+        "name": "Danny Nimmo",
+        "homepage": "http://da.nny.nz/"
+    },
+    "repository": {
+       "type": "git",
+        "url": "https://github.com/dannynimmo/strapPoint.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dannynimmo/strapPoint/issues"
+    }
+}
