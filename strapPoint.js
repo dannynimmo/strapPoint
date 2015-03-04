@@ -20,23 +20,17 @@
         md: { name: 'md', maxWidth: 1199, value: 3 },
         lg: { name: 'lg', maxWidth: NaN,  value: 4 },
 
-        $body:   $('body'),
+        $eventTarget: $(document),
 
 
         init: function () {
-            if (H.$body.length === 0) {
-                $(document).ready(function () {
-                    H.$body = $('body');
-                });
-            }
-
             H.currentSize = H.getSize();
             $(window).on('resize', function () {
                 var size = H.getSize();
                 if (size !== H.currentSize) {
                     H.previousSize = H.currentSize;
                     H.currentSize  = size;
-                    H.$body.trigger(H.eventName);
+                    H.$eventTarget.trigger(H.eventName);
                 }
             });
         },
@@ -96,7 +90,7 @@
 
         on: function (size, callback) {
             var listenerId = H.getListenerId();
-            H.$body.on(H.eventName + '.' + listenerId, function () {
+            H.$eventTarget.on(H.eventName + '.' + listenerId, function () {
                 H.run(size, callback);
             });
             return listenerId;
@@ -105,7 +99,7 @@
 
         one: function (size, callback) {
             var listenerId = H.getListenerId();
-            H.$body.one(H.eventName + '.' + listenerId, function () {
+            H.$eventTarget.one(H.eventName + '.' + listenerId, function () {
                 H.run(size, callback);
             });
             return listenerId;
@@ -113,7 +107,7 @@
 
 
         off: function (listenerId) {
-            H.$body.off(H.eventName + '.' + listenerId);
+            H.$eventTarget.off(H.eventName + '.' + listenerId);
         },
 
 
