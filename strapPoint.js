@@ -56,7 +56,7 @@
 
 
         run: function (size, callback) {
-            if (size === 'all' || H.currentSize === size) {
+            if (size === 'all' || size.indexOf(H.currentSize) >= 0) {
                 var direction = (H[H.currentSize].value > H[H.previousSize].value) ? 'up' : 'down';
                 callback(direction);
             }
@@ -112,7 +112,7 @@
 
 
         is: function (size) {
-            return size === H.currentSize;
+            return (size.indexOf(H.currentSize) >= 0);
         },
 
 

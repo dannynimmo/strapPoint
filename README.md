@@ -39,7 +39,7 @@ Initial release.
 
 ### `.on (size, callback)`
 
-* `size` — one of `'xs'`, `'sm'`, `'md'`, `'lg'`, or `'all'`
+* `size` — a space separated list of one or more breakpoints: `'xs'`, `'sm'`, `'md'`, `'lg'`, or to match all `'all'`
 * `callback (direction)` — callback function, with the direction (`'up'` or `'down'`) being passed as the only parameter
 * Returns the `listenerId`
 
@@ -60,18 +60,18 @@ $.strapPoint.on('sm', function (direction) {
 
 ### `.one (size, callback)`
 
-* `size` — one of `'xs'`, `'sm'`, `'md'`, `'lg'`, or `'all'`
+* `size` — a space separated list of one or more breakpoints: `'xs'`, `'sm'`, `'md'`, `'lg'`, or to match all `'all'`
 * `callback (direction)` — callback function, with the direction (`'up'` or `'down'`) being passed as the only parameter
 * Returns the `listenerId`
 
 The same as `.on`, only the callback is only run once.
 
 ```javascript
-$.strapPoint.one('md', function (direction) {
+$.strapPoint.one('sm md', function (direction) {
     if (direction === 'down') {
-        console.log('We shrank once to medium.');
+        console.log('We shrank once to medium or small.');
     } else {
-        console.log('We grew once to medium.');
+        console.log('We grew once to medium or small.');
     }
 });
 ```
@@ -121,7 +121,7 @@ $.strapPoint.off(lgListener);
 
 ### `.is (size)`
 
-* `size` — one of `'xs'`, `'sm'`, `'md'`, or `'lg'`
+* `size` — a space separated list of one or more breakpoints: `'xs'`, `'sm'`, `'md'`, `'lg'`
 * Returns `true` or `false`
 
 Returns `true` if the current breakpoint is equal to `size`, otherwise `false`.
