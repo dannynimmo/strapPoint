@@ -11,8 +11,8 @@ Download the latest release from the [GitHub releases](https://github.com/dannyn
 Include the plugin on your page after the reference to jQuery:
 
 ```html
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="js/vendor/jquery.strapPoint-0.1.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/vendor/strapPoint.min.js"></script>
 ```
 
 Then start using strapPoint in your code:

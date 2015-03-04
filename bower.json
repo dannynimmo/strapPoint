@@ -4,7 +4,7 @@
     "description": "A small jQuery utility plugin to make working with Bootstrap breakpoints easier",
     "homepage": "https://github.com/dannynimmo/strapPoint",
     "main": [
-        "jquery.strapPoint-0.1.0.js",
+        "strapPoint.js",
     ],
     "license": "LICENSE",
     "dependencies": {
